@@ -5,7 +5,7 @@ This causes an error, so-called "out-of-range unit number," for some compilers, 
 
 This module provides a function that returns a **positive** unit number not including `input_unit,` `output_unit,` and `error_unit` defined in the `iso_fortran_env` module.
 
-This module is created primarily for avoiding and modifying errors locally during `get_getline.f90` in stdlib and `close_scratch_file` in VTKFortran.
+This module is created primarily for avoiding and modifying errors locally during `get_getline.f90` in [stdlib](https://github.com/fortran-lang/stdlib) and `close_scratch_file` in [VTKFortran](https://github.com/szaghi/VTKFortran).
 
 ## usage
 use the `newunit` module and call `get_newunit_number()` to get a unit number before opening a unit.
